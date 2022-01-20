@@ -1,33 +1,12 @@
-// const myObj = {
-//   name: 'Chaz',
-//   age: '3000',
-//   location: 'Nashville',
-//   favBanc: 'Vulfpeck',
-// };
+let sentence = '          Coding          is fun          ';
 
-// const objArr = [
-//   {
-//     name: 'Supreme',
-//     age: '61',
-//     location: 'Queens',
-//   },
-//   {
-//     name: 'Big U',
-//     age: '56',
-//     location: 'Los Angeles',
-//   },
-//   {
-//     name: 'Haitian Jack',
-//     age: '63',
-//     location: 'Haiti',
-//   },
-// ];
-// const numbers = [15, 22, 10, 14, 15, 10, 17];
+console.log('Sentence before trimming:');
+console.log('<START>', sentence, '<END>');
+console.log('Amount of characters in the sentence: ' + sentence.length);
 
-let phrase = 'Once upon a time, in a land far far away...';
+console.log();
 
-console.log(_.startsWith(phrase, 'Once'));
-console.log(_.startsWith(phrase, 'once'));
-console.log(_.startsWith(phrase, 'land', 7));
-console.log(_.startsWith(phrase, 'land', 5));
-console.log(_.startsWith(phrase, 'away', 9));
+let result = _.trimStart(sentence);
+console.log('Sentence after trimming:');
+console.log('<START>', result, '<END>');
+console.log('Amount of characters in the sentence: ' + result.length);
